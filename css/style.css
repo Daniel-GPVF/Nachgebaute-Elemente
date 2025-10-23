@@ -83,6 +83,7 @@
 .headline {
   font-size: 30px;
   width: max-content;
+  margin-bottom: 12px;
 }
 
 .PC-Content ul {
@@ -91,13 +92,21 @@
   width: max-content;
 }
 
+.PC-Content li {
+  margin-bottom: 8px;
+}
+
 .PC-price span {
   font-weight: bold;
   font-size: 48px;
 }
 
+.PC-price span.eurozeichen {
+  font-size: 30px;
+}
+
 .PC-price p {
-  padding: 0;
+  padding-top: 0px;
   margin: 0;
   font-size: 18px;
 }
@@ -105,4 +114,7 @@
 .bottom-link {
   text-decoration: none;
   color: #bc0000;
+}
+.bottom-link:hover {
+  text-decoration: underline;
 }
