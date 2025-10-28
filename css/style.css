@@ -78,7 +78,7 @@
 
 .imageWindow {
   height: 280px;
-  overflow: hidden;
+  overflow: scroll;
   border-radius: 6px;
 }
 
@@ -170,6 +170,23 @@
   max-width: fit-content;
   min-width: 568px;
   width: 80%;
+}
+/* breakpoint */
+@media (max-width: 1200px) {
+  .DC-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    max-width: 568px;
+  }
+
+  #item-a,
+  #item-b,
+  #item-c,
+  #item-d,
+  #item-e {
+    grid-column: 1;
+    grid-row: auto;
+  }
 }
 
 .DC-Container {
