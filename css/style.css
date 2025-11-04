@@ -127,7 +127,7 @@
   text-decoration: underline;
 }
 
-/* DC - DiscoveryCard */
+/* --------------------------- DC DiscoveryCard --------------------------------------------------------------*/
 
 .DC-body {
   background-color: #f2f2f2;
@@ -187,8 +187,31 @@
   font-display: swap;
 }
 
+.highlightBadge {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: black;
+  background-color: #fecb00;
+  width: fit-content;
+  padding: 0px 12px;
+  border-radius: 100px;
+  margin-top: 12px;
+  font-size: 18px;
+}
+
+.highlightBadge p {
+  margin: 4px 0px;
+}
+
+.highlightBadge-icon {
+  height: 24px;
+  width: 24px;
+}
+
 .DC-headline {
   font-size: 30px;
+  margin-top: 12px;
   min-width: none;
   max-width: max-content;
   margin-bottom: 12px;
@@ -208,6 +231,11 @@
 .DC-price span {
   font-weight: bold;
   font-size: 48px;
+}
+
+.DC-price span.Nur {
+  font-weight: bold;
+  font-size: 30px;
 }
 
 .DC-price span.DC-eurozeichen {
@@ -256,9 +284,9 @@
 }
 
 .DC-imageWindow#DC3 {
-  width: 275px;
   overflow: hidden;
   border-radius: 6px;
+  height: auto;
 }
 
 .DC-image#DC3 {
@@ -315,5 +343,12 @@
   }
   #item-e {
     flex-direction: column;
+  }
+  .DC-imageWindow#DC3 {
+    display: flex;
+    align-items: center;
+    height: 280px;
+    overflow: hidden;
+    border-radius: 6px;
   }
 }
